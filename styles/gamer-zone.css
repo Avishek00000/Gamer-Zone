@@ -44,17 +44,19 @@
 /* main section */
 .main-container{
     display: flex;
-    height: 700px;
+    height: 600px;
     justify-content: space-between;
     background: #FFF;
 }
 .title-description{
- text-align: right;
- padding: 40px;
+    text-align: right;
+    padding: 40px;
+    margin-top: 150px;
 }
 .image-contorl-1{
     width: 650px;
     height: 400px;
+    margin-top: 150px;
 }
 .t-des{
     text-align: right;
@@ -118,6 +120,10 @@
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.image-first{
+    margin-right: 400px;
+    width: 300px;
 }
 .button{
     display: inline-flex;
@@ -233,38 +239,117 @@
 .main-last{
     list-style: none;
     width: 700px;
+    padding-top: 50px;
     padding-left: 200px;
     text-align: center;
     align-items: center;
     display: flex;
-    gap: 80px;
-    font-size: 8px;
+    font-size: 12px;
+    justify-content: space-between;
+
 }
 .item{
     width: 20px;
+    height: 20px;
     text-align: center;
     align-items: center;
 }
+.item-1{
+    display: flex;
+}
+.main-last :hover{
+    width: 150px;
+    border: 1px solid #FF42A5;
+    border-radius: 15px;
+    background-color: #f4fafc;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    Copy
+    Arcade Games
+    ;
+}
 .main-last1{
-    padding-left: 50px;
+    list-style: none;
+    width: 700px;
+    padding-left: 60px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 100px;
+    font-size: 12px;
+
 }
 .footer-main{
     background: #0B0223;
-    height: 400px;
+    height: 600px;
+}
+.icon-2{
+    height: 50px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+#footer-title{
+   font-size: 50px;
 }
 .footer{
     color: #FFF;
-    padding-top: 100px;
-    padding-left: 60px;
+    padding-top: 60px;
+    padding-left: 20px;
     margin-top: 100px;
     margin-left: 400px;
     display: flex;
 }
 .footer-ul{
-    margin-left: 220px;
+    font-family: Work Sans;
+    font-size: 18px;
+    margin-left: 90px;
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+    gap: 70px;
+    color: #FFF;
+    background: #0B0223;
+}
+.footer-ul-2{
+    margin-left: 260px;
+    padding-top: 40px;
     display: flex;
     list-style: none;
     gap: 50px;
     color: #FFF;
     background: #0B0223;
+}
+.footer-ul-3{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Work Sans;
+    font-size: 16px;
+    margin-left: 145px;
+    padding-top: 70px;
+    display: flex;
+    list-style: none;
+    gap: 90px;
+    background: #0B0223;
+}
+#footer-ul-3{
+    margin-left: 340px;
+    padding-top: 20px;
+    display: flex;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Work Sans;
+    font-size: 16px;
+    list-style: none;
+    gap: 50px;
+    background: #0B0223;
+}
+@media screen and (max-width:576px) {
+    .header-section{
+        flex-direction: column;
+       }
+       .bar-section{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0%;
+       }
 }
